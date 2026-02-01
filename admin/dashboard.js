@@ -100,7 +100,7 @@ async function loadRooms() {
         const div = document.createElement("div");
         div.className = "room-item";
         div.innerHTML = `
-          <p><strong>غرفة ${r.number}</strong></p>
+          <p><strong> ${r.number}</strong></p>
           <p>${r.description}</p>
           <p>👤 ${r.capacity} أفراد</p>
           <button class="edit-btn" data-id="${r.id}">✏️ تعديل</button>
@@ -338,4 +338,5 @@ function cancelEdit() {
 cancelBtn.addEventListener("click", cancelEdit);
 
 loadRooms();
+
 
