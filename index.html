@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الشقق</title>
+  <link rel="stylesheet" href="rooms.css">
+</head>
+<body>
+
+<h2 class="title"> الشقق المتاحة</h2>
+<div class="rooms-container" id="roomsContainer"></div>
+
+<!-- Popup للصور -->
+<div id="popup" class="popup">
+  <span class="close" id="closePopup">&times;</span>
+  <div id="imageCounter" class="image-counter">1 / 1</div>
+  <div class="slider">
+    <button class="prev" aria-label="الصورة السابقة">&#10094;</button>
+    <img id="popupImage" src="" alt="صورة الغرفة">
+    <button class="next" aria-label="الصورة التالية">&#10095;</button>
+  </div>
+  <div class="zoom-controls">
+    <button id="zoomIn" aria-label="تكبير">+</button>
+    <button id="zoomOut" aria-label="تصغير">-</button>
+    <button id="resetZoom" aria-label="إعادة تعيين">Reset</button>
+  </div>
+</div>
+
+
+<script type="module" src="popup.js"></script>
+<script type="module" src="rooms.js"></script>
+</body>
+</html>
