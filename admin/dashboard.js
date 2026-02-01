@@ -1,4 +1,4 @@
-import { supabase } from "./supabaseClient.js";
+import { supabase } from "../supabaseClient.js";
 
 const form = document.getElementById("roomForm");
 const list = document.getElementById("roomsList");
@@ -338,3 +338,4 @@ function cancelEdit() {
 cancelBtn.addEventListener("click", cancelEdit);
 
 loadRooms();
+
