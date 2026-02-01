@@ -47,7 +47,7 @@ if (!container) {
         `;
 
         // إضافة النصوص بشكل آمن
-        card.querySelector("h3").textContent = `غرفة ${room.number}`;
+        card.querySelector("h3").textContent = ` ${room.number}`;
         card.querySelector(".description").textContent = room.description;
         card.querySelector(".capacity").textContent = `👤 ${room.capacity} أفراد`;
 
@@ -75,3 +75,4 @@ if (!container) {
   // استدعاء الدالة
   loadRooms();
 }
+
